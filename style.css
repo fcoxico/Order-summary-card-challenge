@@ -1,0 +1,283 @@
+@charset "utf-8";
+@import url("https://fonts.google.com/specimen/Red+Hat+Display");
+* {
+  margin: 0;
+  padding: 0;
+}
+/*
+* These are the variables that I'm gonna use in 
+* the entire project.
+*/
+
+:root {
+  --pale_blue: hsl(225, 100%, 94%);
+  --bright_blue: hsl(245, 75%, 52%, 1);
+  --very_pale_blue: hsl(225, 100%, 98%);
+  --desaturated_blue: hsl(224, 23%, 55%);
+  --dark_blue: hsl(223, 47%, 23%);
+  --greyed_blue: hsl(245, 83%, 68%);
+  --dark_font_color: hsla(223, 23%, 55%, 1);
+  --font-size: 16px;
+}
+
+body {
+  background-color: var(--very_pale_blue);
+  font-family: "Red Hat Display", sans-serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  text-align: center;
+  align-self: flex-start;
+}
+.img-bg {
+  width: 100%;
+}
+
+main {
+  width: 450px;
+  height: 697px;
+  display: flex;
+  gap: 10%;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 30px;
+  justify-content: space-between;
+  margin-top: -400px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.info h1 {
+  font-size: var((--font-size) * 1.5);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 37px;
+  text-align: center;
+  color: var(--dark_blue);
+}
+
+.info p {
+  padding: 0 2rem 0 2rem;
+  font-size: var(--font-size);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: center;
+  color: var(--dark_font_color);
+}
+
+.img-hero {
+  width: 450px;
+  height: 220px;
+  left: 0px;
+  top: 0px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+.plan_info {
+  width: 78%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+  background-color: var(--very_pale_blue);
+  border-radius: 10px;
+  margin-bottom: 32px;
+}
+
+.plan_info img {
+  width: 42px;
+  left: 0;
+  align-self: auto;
+  justify-self: flex-start;
+}
+
+.btn_change {
+  color: var(--bright_blue);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  text-decoration-line: underline;
+  flex-shrink: 2;
+}
+
+.btn_change:hover {
+  text-decoration: none;
+}
+
+.plan_price {
+  display: block;
+  text-align: initial;
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.plan_price h4 {
+  font-size: var((--font-size) * 1);
+  color: var(--dark_blue);
+
+}
+.plan_price h5 {
+  font-weight: 700;
+  color: var(--dark_font_color);
+}
+
+.btn-pay {
+  width: 86%;
+  height: 44px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--bright_blue);
+  color: white;
+  padding: 0 20px 0 20px;
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+}
+
+.btn-pay:hover,
+.btn-pay:focus, .btn-pay::active {
+  background-color: var(--greyed_blue);
+  cursor: pointer;
+}
+
+.cancel {
+  margin-top: 27px;
+  margin-bottom: 55px;
+  color: var(--desaturated_blue);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.cancel::hover,
+.cancel::focus, .cancel::active {
+  color: var(--dark_blue);
+  cursor: pointer;
+}
+
+/*----------  Footer  ---------------*/
+footer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  body {
+    height: 48vh;
+  }
+  main {
+    width: 327px;
+    height: 567px;
+    gap:0;
+    position: absolute;
+    top: 44px;
+    left: 24px;
+    right: 24px;
+    margin-top: 0px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    margin-top: 32px;
+  }
+  
+  .info h1 {
+    font-size: var((--font-size) * 1.4);
+    font-style: normal;
+    font-weight: 900;
+    line-height: 29px;
+  }
+  
+  .info p {
+    padding: 0 2rem 0 2rem;
+    font-size: var(--font-size);
+    font-size: 1rem;
+    line-height: 25px;
+  }
+
+
+  .img-hero {
+    width: 327px;
+    height: 160px;
+  }
+  
+  .plan_info {
+    width: 279px;
+    height: 81px;
+    margin-top: 20px;
+    padding: 0;
+  }
+  
+  .plan_info img {
+    width: 42px;
+    margin-left: 10px;
+    align-self: auto;
+    justify-self: flex-start;
+  }
+  
+  .btn_change {
+    color: var(--bright_blue);
+    font-size: var((--font-size)*0.8);
+    line-height: 17.2px;
+    flex-shrink: 2;
+    margin-right: 10px;
+  }
+  
+  .btn_change:active {
+    text-decoration: none;
+  }
+  
+  .plan_price h4 {
+    font-size: var((--font-size) * 0.9);
+    line-height: 18.52px;
+  
+  }
+  .plan_price h5 {
+    font-weight: 700;
+    color: var(--dark_font_color);
+    font-size: var((--font-size) * 0.8);
+  }
+  
+  .btn-pay {
+    width: 279px;
+    height: 50px;
+  }
+  
+  .cancel {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    font-size: var((--font-size)*0.9);
+  }
+    
+  /*----------  Footer  ---------------*/
+  footer {
+    bottom: 15px;
+    position: absolute;
+    margin: 0;
+  }
+  .attribution {
+    font-size: ((--font-size)*0.5);
+  }
+}
