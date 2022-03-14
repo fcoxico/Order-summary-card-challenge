@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/fcoxico/Order-summary-card-challenge](https://github.com/fcoxico/Order-summary-card-challenge)
+- Live Site URL: [https://order-summary-card-challenge.vercel.app/](https://order-summary-card-challenge.vercel.app/)
 
 ## My process
 
